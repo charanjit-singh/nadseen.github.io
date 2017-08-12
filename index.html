@@ -53,6 +53,48 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
   </head>
+  <style type="text/css">
+  	
+.caption-content {
+  display: table-cell;
+  vertical-align: left;
+  
+  text-align: left;
+  padding-left: 9%;
+}
+
+div.two {
+margin-top: 45%;
+  margin-left: 60px;
+}
+
+div.three{
+	 
+margin-top: 40%;
+
+  padding-left: 9%;
+  margin-left: 5px; 
+ 
+}
+
+@media (min-width: 500px){
+
+div.three{
+	display: none;
+}
+}
+@media (max-width: 500px) {
+  div.two{
+   display: none;
+  }
+  .caption-content{
+  	display: none;
+
+  }
+
+}
+
+  </style>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
@@ -94,7 +136,8 @@
       </nav>
 
       <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/section-5.jpg">
-     <!--   <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=4DTO4uHRKqQ&list=PLGmxyVGSCDKvmLInHxJ9VdiwEb82Lxd2E&index=4', containment:'.home-section', mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+ <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=A9abHX_NSK4', containment:'.home-section', mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+ <!--
         <div class="video-controls-box">
           <div class="container">
 <!--            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
@@ -102,16 +145,93 @@
         </div>-->
         <div class="titan-caption">
           <div class="caption-content">
-          <div class="font-alt mb-40 titan-title-size-3">Design and Innovation Group</div>
-            <div class="font-alt mb-10 titan-title-size-1">hello &amp; welcome</div>
+          <div class="font-alt titan-title-size-3">Prove Yourself</div>
+            <div class="font-alt mb-10 titan-title-size-2">Solve challenges, Advance your career<br> &amp; Connect with similar people.</div>
+           
+          </div> 
+          <div class="two">
+
+          <div class="font-awesome mb-10 titan-title-size-2">Let's get started</div>
+
+            <a class="section-scroll btn mb-20 btn-border-w btn-round"  href="#events">Event Registration</a>
+            <div class="font-awesome mb-10">By starting, you agree to <b> Design &amp; Innovation Group's </b><br>Terms of conditions,Privacy Policy &amp; Cookie Policy.
+</div>
            
           </div>
+          <div class="three">
+ <div class="font-alt titan-title-size-3">Prove Yourself</div>
+            <div class="font-alt mb-30 titan-title-size-2">Solve challenges, Advance your career &amp; Connect with similar people.</div>
+           
+          <div class="font-awesome mb-10 titan-title-size-2">Let's get started</div>
+
+            <a class="section-scroll btn mb-20 btn-border-w btn-round"  href="#events">Event Registration</a>
+            <div class="font-awesome mb-10">By starting, you agree to <b> Design &amp; Innovation Group's </b><br>Terms of conditions,Privacy Policy &amp; Cookie Policy.
+</div>
         </div>
+
+
+
+
+
+
       </section>
 
       <div class="main">
-        
-        <section class="module">
+        <section class="module" id="alt-features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">How it Works</h2>
+                <div class="module-subtitle font-serif">DIG is a platform where you can challenge yourself in order to stand out.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-3 col-lg-3">
+              <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-basket"></span></div>
+                  <h3 class="alt-features-title font-alt">Activities</h3>Participate in hackathons, code jams, case study competitions , attend learnups to show your skills and grow professionally.
+                </div>
+                
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-target"></span></div>
+                  <h3 class="alt-features-title font-alt">Join</h3>Highlight interests to receive curated challenges and learning resources
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                  <h3 class="alt-features-title font-alt">Learn</h3>Participate in tutorials, access webinars and attend real time learnups for a holistic learning experience.
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                <div class="alt-services-image align-center">
+                  <img src="assets/images/promo.png" alt="Feature Image">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                  <h3 class="alt-features-title font-alt">Compete</h3>Solve problems, form communities of self minded individuals and tackle challenge-based activities for immediate rewards.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-mobile"></span></div>
+                  <h3 class="alt-features-title font-alt">Stand out</h3>Lucrative job offers, handsome cash payouts, peer recognition and bragging rights are all yours for the taking!
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                  <h3 class="alt-features-title font-alt">Job Opportunities</h3>Once candidates complete our challenges successfully, we showcase the profiles to our hiring partners.
+                </div>
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-strategy"></span></div>
+                  <h3 class="alt-features-title font-alt">Unique Challenges</h3>Solve the challenges we throw at you and add to your credibility.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module" id='events'>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
               <h2 class="module-title font-alt">Trending Events</h2>
@@ -185,60 +305,9 @@
 
                 </div>
               </div>
-            
-          </div>
-        </section>
-
-        <section class="module" id="alt-features">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">How it Works</h2>
-                <div class="module-subtitle font-serif">DIG is a platform where you can challenge yourself in order to stand out.</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-basket"></span></div>
-                  <h3 class="alt-features-title font-alt">Activities</h3>Participate in hackathons, code jams, case study competitions , attend learnups to show your skills and grow professionally.
-                </div>
-                
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
-                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-target"></span></div>
-                  <h3 class="alt-features-title font-alt">Join</h3>Highlight interests to receive curated challenges and learning resources
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
-                  <h3 class="alt-features-title font-alt">Learn</h3>Participate in tutorials, access webinars and attend real time learnups for a holistic learning experience.
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                <div class="alt-services-image align-center">
-                  <img src="assets/images/promo.jpg" alt="Feature Image">
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
-                  <h3 class="alt-features-title font-alt">Compete</h3>Solve problems, form communities of self minded individuals and tackle challenge-based activities for immediate rewards.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-mobile"></span></div>
-                  <h3 class="alt-features-title font-alt">Stand out</h3>Lucrative job offers, handsome cash payouts, peer recognition and bragging rights are all yours for the taking!
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
-                  <h3 class="alt-features-title font-alt">Job Opportunities</h3>Once candidates complete our challenges successfully, we showcase the profiles to our hiring partners.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-strategy"></span></div>
-                  <h3 class="alt-features-title font-alt">Unique Challenges</h3>Solve the challenges we throw at you and add to your credibility.
-                </div>
+            <div class="row mt-40">
+              <div class="col-sm-6 col-sm-offset-3 align-center">
+                <p>You can pay Registeration Fees on the spot of event also.<br>*Terms and conditions apply.</p>
               </div>
             </div>
           </div>
@@ -377,6 +446,64 @@
               </div>
               <div class="col-sm-6 col-md-4 col-lg-2">
                 <div class="callout-btn-box"><a class="btn btn-w btn-round" href="portfolio_masonry_boxed_col_2.html">Lets view portfolio</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      
+        
+       
+        <section class="module" id="news">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Latest blog posts</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+            <div class="row multi-columns-row post-columns">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
               </div>
             </div>
           </div>
